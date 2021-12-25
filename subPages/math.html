@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid-container {
+            width: 80%;
+            max-width: auto;
+            text-align: center;
+        }
+
+        .grid-container .grid_item {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .grid-container .grid_item img {
+            display: block;
+            height: 15%;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid_item">
+            <img src="../images/math/math0.jpg" alt="">
+            <img src="../images/math/math1.jpg" alt="">
+            <img src="../images/math/math2.jpg" alt="">
+            <img src="../images/math/math3.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

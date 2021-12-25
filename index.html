@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOSEN LIBRARY</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700'
+    rel='stylesheet' type='text/css'>
+
+  <section class="hero image-as-background"
+    style="background-image: url('https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+    <div class="hero-container">
+      <p class="animate fadeInLeft delay-400">A simple project using Teachabel Machine</p>
+      <h1 class="hero-title animate fadeInLeft delay-600">高専図書館</h1>
+      <h1 class="hero-title animate fadeInLeft delay-600">参考書検査システム</h1>
+     
+      <a href="#webcam-container">
+        <button class="hero-button animate fadeInLeft delay-800" onclick="init()">カメラで検索</button>
+      </a>
+      
+    </div>
+  </section>
+
+  <section class="main-content">
+    
+
+
+
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+
+    <div id="geography" class="display-none btn">
+      <a href="./subPages/geography.html">地学の参考書</a>
+    </div>
+
+    <div id="network" class="display-none btn">
+      <a href="./subPages/network.html">情報通信の参考書</a>
+    </div>
+
+    <div id="caculus" class="display-none btn">
+      <a href="./subPages/caculus.html">解析の参考書</a>
+    </div>
+
+    <div id="math" class="display-none btn">
+      <a href="./subPages/math.html">応用数学の参考書</a>
+    </div>
+
+  </section>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <script src="js/callModel.js"></script>
+  <script src="js/index.js"></script>
+
+
+
+</body>
+
+</html>
